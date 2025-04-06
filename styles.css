@@ -417,6 +417,7 @@ form {
     z-index: 15;
     display: flex;
     align-items: flex-end;
+    text-decoration: none;
     height: 100%;
     padding: 10px;
     color: var(--white);
