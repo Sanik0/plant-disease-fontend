@@ -386,6 +386,7 @@ form {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    text-decoration: none;
 }
 
 .cards-container-plants .cards-slider .card .image-container {
