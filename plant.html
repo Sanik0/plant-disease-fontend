@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rum+Raisin&display=swap" rel="stylesheet">
+    <title>PlantCam</title>
+</head>
+<body>
+    <!-- ===================header=================== -->
+    <section class="header">
+        <div class="logo poppins-regular">
+            PlantCare
+        </div>
+    </section>
+    <!-- ===================navigation=================== -->
+     <section class="plant">
+
+        <div class="name-classification">
+            <div class="classification poppins-medium">nightshade</div>
+            <div class="name poppins-medium">Tomato</div>
+        </div>
+
+        <div class="image-container">
+            <img src="/resrources/images (8).jpg" alt="">
+        </div>
+
+        <div class="about">
+
+            <div class="icon-text">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+                Info
+            </div>
+
+            <div class="text expandableText" >
+            The tomato (Solanum lycopersicum), known as kamatis in the Philippines, is a popular and highly nutritious vegetable that belongs to the Solanaceae or nightshade family. Native to western South America, particularly Peru and Ecuador, tomatoes were first domesticated by the Aztecs around 500 BC and later introduced to Europe by Spanish colonizers in the 16th century. They eventually made their way to the Philippines during the Spanish colonial period, where they became a staple in Filipino cuisine.
+            <br>
+            <br>
+            Tomato plants are herbaceous annuals that can grow as bushes or vines, depending on the variety. They thrive in warm, sunny climates with temperatures between 20–30°C and prefer well-draining, loamy soil with a slightly acidic pH of 6.0–6.8. In the Philippines, tomatoes are commonly grown from seeds or seedlings and typically mature within 60 to 100 days. Popular local varieties include the hybrid Marikit, which is disease-resistant, the large and fleshy Diamante, and the small, tangy Native Kamatis, often used in dishes like sinigang for its distinct sour flavor.
+            <br>
+            <br>
+            Tomatoes are not only versatile in cooking but also packed with nutrients. They are an excellent source of lycopene, a powerful antioxidant linked to heart health and cancer prevention, as well as vitamin C, potassium, and fiber. In Filipino cuisine, tomatoes are used fresh in salads (ensalada), as a base for sauces, or cooked in soups and stews. Green, unripe tomatoes are also utilized in dishes like sinigang for their tartness.
+            </div>
+
+        </div>
+
+        <div class="diseases">
+            <div class="icon-text">
+                <span class="material-symbols-outlined">
+                    microbiology
+                </span>
+                Diseases
+            </div>
+
+            <div class="disease expandableText">
+                <div class="name poppins-medium">Bacterial Spot</div>
+                    Creates raised, scabby lesions on fruits and small, angular leaf spots with yellow halos. The bacteria spread rapidly during rainstorms and overhead irrigation.
+            </div>
+
+            <div class="disease expandableText">
+                <div class="name poppins-medium">Tomato Leaf Curl Virus</div>
+                    Transmitted by whiteflies, this virus causes severe upward leaf curling, stunting, and dramatically reduced fruit set. Infected plants often produce small, deformed fruits that fail to mature properly.
+            </div>
+
+            <div class="disease expandableText">
+                <div class="name poppins-medium">Early Blight</div>
+                    This aggressive fungus appears as small, dark brown spots with concentric rings on older leaves, eventually causing defoliation. The disease spreads upward, weakening plants and reducing fruit size and yield by up to 50%.
+            </div>
+
+            <div class="disease expandableText">
+                <div class="name poppins-medium">Fusarium Wilt</div>
+                    This soil-borne pathogen causes yellowing and wilting that typically begins on one side of the plant. Vascular browning is visible when stems are cut open, and the fungus can survive in soil for over 10 years.
+            </div>
+
+        </div>
+
+     </section>
+     
+     
+
+
+    <!-- ===================navigation=================== -->
+    <div class="navigation">
+
+        <a href="history.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                history
+            </span>
+            <div class="text">
+                History
+            </div>
+        </a>
+        
+        <a href="home.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <div class="text">
+                Home
+            </div>
+        </a>
+        
+        <a href="home.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            <div class="text">
+                Settings
+            </div>
+        </a>
+        
+    </div>
+
+
+
+        
+
+    <script src="script.js"></script>
+    <script>
+       document.querySelectorAll(".expandableText").forEach(element => {
+            element.addEventListener("click", function() {
+                this.classList.toggle("expanded");
+            });
+        });
+
+    </script>
+</body>
+</html>

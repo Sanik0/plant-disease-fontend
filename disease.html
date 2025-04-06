@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rum+Raisin&display=swap" rel="stylesheet">
+    <title>PlantCam</title>
+</head>
+<body>
+<!-- ===================header=================== -->
+<section class="header">
+    <div class="logo poppins-regular">
+        PlantCare
+    </div>
+</section>
+
+    <form action="" method="POST" enctype="multipart/form-data" class="upload-photo">
+        <div class="img-container">
+            <img id="imagePreview">
+        </div>
+        <input type="file" name="image" accept="image/*" id="imageInput" accept="image/*" required>
+        <a href="disease-sample.html" type="submit" class="detect-button">
+            <span class="material-symbols-outlined">
+                image_search
+            </span>
+            Detect Disease
+        </a>
+    </form>
+
+    <!-- ===================navigation=================== -->
+    <div class="navigation">
+
+        <a href="history.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                history
+            </span>
+            <div class="text">
+                History
+            </div>
+        </a>
+        
+        <a href="home.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <div class="text">
+                Home
+            </div>
+        </a>
+        
+        <a href="profile.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            <div class="text">
+                Settings
+            </div>
+        </a>
+        
+    </div>
+
+
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>

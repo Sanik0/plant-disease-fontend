@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rum+Raisin&display=swap" rel="stylesheet">
+    <title>PlantCam</title>
+</head>
+<body>
+    <!-- ===================header=================== -->
+    <section class="header">
+        <div class="logo poppins-regular">
+            PlantCare
+        </div>
+    </section>
+
+    <!-- ===================profile=================== -->
+     <section class="profile-container">
+        <div class="profile-bg-profile-image">
+            <div class="profile-bg"></div>
+            <div class="image-container">
+                <img src="/resrources/default_profile.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="informations-container">
+
+            <div class="information">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                ronansanico2005
+            </div>
+
+            <div class="information">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                sanico.ronan.macugay@gmail.com
+            </div>
+
+        </div>
+
+        <div class="button-container">
+            <a class="button button-delete-account" href="index.html">
+                <span class="material-symbols-outlined">
+                    delete_forever
+                </span>
+                Delete Accnt
+            </a>
+            <a class="button" href="index.html">
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+                Log Out
+            </a>
+
+        </div>
+
+     </section>
+
+    <!-- ===================get in touch container=================== -->
+     <section class="get-in-touch-container">
+        <div class="headings">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+
+        <form action="" method="POST">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter you email address" required>
+            <textarea name="" id="" placeholder="Type your message, we're here to listen.."></textarea>
+            <button>Submit</button>
+        </form>
+     </section>
+
+
+    <!-- ===================FAQ container=================== -->
+
+
+
+
+    <!-- ===================navigation=================== -->
+    <div class="navigation">
+
+        <a href="history.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                history
+            </span>
+            <div class="text">
+                History
+            </div>
+        </a>
+        
+        <a href="home.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <div class="text">
+                Home
+            </div>
+        </a>
+        
+        <a href="profile.html" class="nav-item">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            <div class="text">
+                Settings
+            </div>
+        </a>
+        
+    </div>
+
+        
+
+    <script src="script.js"></script>
+    <script>
+       document.querySelectorAll(".expandableText").forEach(element => {
+            element.addEventListener("click", function() {
+                this.classList.toggle("expanded");
+            });
+        });
+
+    </script>
+</body>
+</html>
