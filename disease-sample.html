@@ -9,6 +9,18 @@
     <title>PlantCam</title>
 </head>
 <body>
+
+    <section class="sidebar-container">
+        <div class="logo-container">
+            PLlantCare
+        </div>
+        <ul>
+            <li><a href="home.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+            <li><a href="history.html"><span class="material-symbols-outlined">history</span>History</a></li>
+            <li><a href="profile.html"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+        </ul>
+    
+    </section>
 <!-- ===================header=================== -->
 <section class="header">
     <div class="logo poppins-regular">
@@ -16,22 +28,22 @@
     </div>
 </section>
 
-    <form action="" method="POST" enctype="multipart/form-data" class="upload-photo">
+    <form action="" method="POST" enctype="multipart/form-data" class="upload-photo sample-disease-form">
         <div class="img-container">
             <img src="resrources/bacterial_leafSpot.jpg" id="imagePreview">
         </div>
-        <input type="file" name="image" accept="image/*" id="imageInput" accept="image/*" required>
+        <!-- <input type="file" name="image" accept="image/*" id="imageInput" accept="image/*" required>
         <button type="submit" class="detect-button">
             <span class="material-symbols-outlined">
                 image_search
             </span>
             Detect Disease
-        </button>
+        </button> -->
     </form>
 <!-- ===================sample information=================== -->
 
 <section class="sample-information-container">
-    <h1 class="poppins-semibold">Bacterial leaf spot</h1>
+    <h1 class="poppins-semibold">Bacterial leaf spot - 70%</h1>
     <p> Creates raised, scabby lesions on fruits and small, angular leaf spots with yellow halos. The bacteria spread rapidly during rainstorms and overhead irrigation.</p>
     <h2 class="poppins-semibold">Prevention</h2>
     <ul>
@@ -57,16 +69,37 @@
             Neem oil (acts as an antibacterial and insect repellent).
         </li>
     </ul>
+
+    <div class="diseases">
+        <div class="icon-text">
+            <span class="material-symbols-outlined">
+                microbiology
+            </span>
+             Other Diseases
+        </div>
+
+        <div class="disease expandableText">
+            <div class="name poppins-medium">Bacterial Spot -  20%</div>
+                Creates raised, scabby lesions on fruits and small, angular leaf spots with yellow halos. The bacteria spread rapidly during rainstorms and overhead irrigation.
+        </div>
+
+        <div class="disease expandableText">
+            <div class="name poppins-medium">Tomato Leaf Curl Virus  -  15%</div>
+                Transmitted by whiteflies, this virus causes severe upward leaf curling, stunting, and dramatically reduced fruit set. Infected plants often produce small, deformed fruits that fail to mature properly.
+        </div>
+
+        <div class="disease expandableText">
+            <div class="name poppins-medium">Early Blight -  13%</div>
+                This aggressive fungus appears as small, dark brown spots with concentric rings on older leaves, eventually causing defoliation. The disease spreads upward, weakening plants and reducing fruit size and yield by up to 50%.
+        </div>
+
+        <div class="disease expandableText">
+            <div class="name poppins-medium">Fusarium Wilt  -  10%</div>
+                This soil-borne pathogen causes yellowing and wilting that typically begins on one side of the plant. Vascular browning is visible when stems are cut open, and the fungus can survive in soil for over 10 years.
+        </div>
+
+    </div>
 </section>
-
-
-
-
-
-
-   
-
-
 
 
     <!-- ===================navigation=================== -->
@@ -103,5 +136,13 @@
         
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll(".expandableText").forEach(element => {
+             element.addEventListener("click", function() {
+                 this.classList.toggle("expanded");
+             });
+         });
+ 
+     </script>
 </body>
 </html>
